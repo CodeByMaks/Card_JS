@@ -1,0 +1,45 @@
+body{
+    background-color: blueviolet;
+}
+.counter{
+    width: 350px;
+    height: 400px;
+    margin: auto;
+    margin-top: 10%;
+    border-radius: 10%;
+    background-color: white;
+    box-shadow: 0px 0px 30px yellow;
+}
+.txt{
+    text-align: center;
+    padding: 25px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+}
+.butts{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.point{
+    text-align: center;
+    font-size: 70px;
+}
+.fir_but{
+    padding: 10px 30px;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+}
+.sec_but{
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+.thir_but{
+    padding: 10px 30px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+}
