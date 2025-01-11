@@ -1,0 +1,133 @@
+.container{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px; 
+    gap: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container input{
+    padding: 13px 30px;
+    background-color: rgba(234, 231, 231, 0.71);
+    border: none;
+    border-radius: 5px;
+}
+.mebel{
+    position: relative;
+    width: 310px;
+    height: 270px;
+    box-shadow: 0px 0px 10px gray;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.mebel:hover{
+    transform: scale(1.1);
+}
+.box{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    position: relative;
+}
+.img-mebel{
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+.description{
+    text-align: center;
+    color: gray;
+    margin: 0;
+}
+.tools{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+.tools img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.check{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.text-sold{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    display: none;
+    font-weight: bold;
+}
+.searche{
+    display: flex;
+    gap: 10px;
+}
+.pushSearch{
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: brown;
+    color: white;
+    cursor: pointer;
+}
+.but-add{
+    border: none;
+    padding: 10px 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: brown;
+    color: white;
+    border-radius: 5px;
+}
+.dial{
+    width: 30%;
+    height: 300px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 10px;
+    padding: 30px 0px;
+}
+.structure{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.structure input{
+    width: 60%;
+    padding: 10px 10px;
+    margin: 8px 0px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 10px gray   ;
+}
+.structure button{
+    width: 40%;
+    margin: 20px 0px 0px 0px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: brown;
+    color: white;
+}
+.structure button:hover{
+    cursor: pointer;
+    background-color: aquamarine;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px black;
+}
+.addModal{
+    width: 30%;
+    height: 300px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 10px;
+    padding: 30px 0px;
+}

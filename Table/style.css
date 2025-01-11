@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+table{
+    width: 80%;
+    margin: 100px auto;
+    border-collapse: collapse;
+    text-align: center;;
+}
+.td{
+    padding: 10px;
+}
+th{
+    border-left: 1px solid rgba(182, 179, 179, 0.268);  
+    padding: 20px 10px; 
+    background-color: rgba(240, 237, 237, 0.311);
+}
+tr{
+    border: 1px solid rgba(182, 179, 179, 0.301);  
+    padding: 20px 10px;
+}
+tr:hover{
+    transform: scale(1.009);
+    transition: transform 0.5s ease;
+}
+.custom{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+.photo{
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+.tools{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+}
+.toolDel, .toolInfo, .toolEdit{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+.optName{
+    text-align: start;
+    padding: 5px;
+}
+.Checkbox{
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+}
+.status{
+    color: green;
+    font-weight: bold;
+}
+.statusss{
+    color: red;
+    font-weight: bold;
+}
+dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 35%;
+    height: 400px;
+}
+.format{
+    width: 60%;
+    margin: auto;
+    margin-top: 35px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.format input{
+    width: 100%;
+    padding: 10px 0px 10px 10px;
+}
+.btnSave{
+    width: 50%;
+    padding: 13px;
+    border: none;
+    background-color: #007bff;
+    border-radius: 5px;
+    color: white;
+    margin: 10px 0px;
+}
+.btnSave:hover{
+    background-color: green;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px black;
+}
+.addTR{
+    position: absolute;
+    top: 7%;
+    right: 10%;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.addTR:hover{
+    cursor: pointer;
+    background-color: green;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px black;
+}
+.addButton{
+    width: 50%;
+    padding: 13px;
+    border: none;
+    background-color: #007bff;
+    border-radius: 5px;
+    color: white;
+    margin: 10px 0px;
+}
+.addButton:hover{
+    cursor: pointer;
+    background-color: green;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px black;
+}
+.search{
+    width: 20%;
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    top: 7%;
+    left: 10%;
+}
+.searchInput{
+    width: 70%;
+    padding: 5px 0px 5px 15px;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 0px 0px 8px rgb(187, 182, 182);
+}
+.searchButton{
+    padding: 10px 30px;
+    border: none;
+    background-color: #007bff;
+    border-radius: 5px;
+    color: white;
+}
+.searchButton:hover{
+    cursor: pointer;
+    background-color: green;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px black;
+}
+.formati{
+    width: 60%;
+    margin: auto;
+    margin-top: 35px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.viewModal{
+    width: 40%;
+    height: 500px;
+}
+.photo_info{
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+.searchBut{
+    padding: 10px 40px;
+    border: none;
+    background-color: #007bff;
+    border-radius: 5px;
+    color: white;
+}
+.searchBut:hover{
+    cursor: pointer;
+    background-color: green;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px black;
+}

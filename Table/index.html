@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <button class="addTR">ADD NEW</button>
+    <div class="search">
+      <input type="text" class="searchInput" placeholder="Search...">
+      <button class="searchButton">Search</button>
+    </div>    
+    <table>
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>CUSTOMER NAME</th>
+          <th>CONTACT</th>
+          <th>AGE</th>
+          <th>COUNTRY</th>
+          <th>STATUS</th>
+          <th>ACTIONS</th>
+        </tr>
+      </thead>
+      <tbody class="main"></tbody>
+    </table>
+
+    <dialog class="editModal">
+      <div class="format">
+        <input type="text" class="inpImg" />
+        <input class="inpName" type="text" />
+        <input class="inpEmail" type="email" />
+        <input class="inpPhoneNumber" type="text" />
+        <input class="inpAge" type="number" />
+        <input class="inpCountry" type="text" />
+        <button class="btnSave">Save</button>
+      </div>
+    </dialog>
+
+    <dialog class="addModal">
+      <div class="format">
+        <input class="addImg" placeholder="path to img..." type="text" />
+        <input class="addName" placeholder="name..." type="text" />
+        <input class="addEmail" placeholder="email..." type="text" />
+        <input class="addPhoneNumber" placeholder="phone number..." type="text" />
+        <input class="addAge" placeholder="age..." type="number" />
+        <input class="addCountry" placeholder="country..." type="text" />
+        <button class="addButton">ADD</button>
+      </div>
+    </dialog>
+
+    <dialog class="viewModal">
+      <div class="formati">
+
+      </div>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
