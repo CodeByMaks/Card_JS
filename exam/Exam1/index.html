@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="first-sector">
+        <div>
+            <h1>Members list</h1>
+            <p>See information about all members</p>
+        </div>
+        <div>
+            <button class="butView">VIEW ALL</button>
+            <button class="butAdd">+ ADD MEMBER</button>
+        </div>
+        </div>
+        <div class="first-sector">
+            <div class="second-sec">
+                <div class="sort">
+                    <div class="all">All</div>
+                    <div class="all1">Monitored</div>
+                    <div class="all1">Unmonitored</div>
+                </div>
+                <div>
+                    <input class="search" type="text" placeholder="Search...">
+                </div>
+        </div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Member</th>
+                <th>Profession</th>
+                <th>Status</th>
+                <th>Employed</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody class="tbody"></tbody>
+    </table>
+
+    <dialog class="adding">
+        <div class="structure">
+            <h1 style="text-align: center;">Add Member</h1>
+            <input class="inpImg" type="text" placeholder="img">
+            <input class="inpName" type="text" placeholder="Fullname...">
+            <input class="inpEmail" type="text" placeholder="email">
+            <input class="inpProf" type="text" placeholder="prof">
+            <select class="inpStatus" name="" id="">
+                <option value="online">ONLINE</option>
+                <option value="offline">OFFLINE</option>
+            </select>
+            <input class="inpDate" type="date" placeholder="date">
+            <button class="btnSave">Save</button>
+        </div>
+    </dialog>
+
+    <dialog class="infoEdit">
+        <div class="structure">
+            <h1 style="text-align: center;">Edit Member</h1>
+            <input class="editImg" type="text" placeholder="img">
+            <input class="editName" type="text" placeholder="Fullname...">
+            <input class="editEmail" type="text" placeholder="email">
+            <input class="editProf" type="text" placeholder="prof">
+            <select class="editStatus" name="" id="">
+                <option value="online">ONLINE</option>
+                <option value="offline">OFFLINE</option>
+            </select>
+            <input class="editDate" type="date" placeholder="date">
+            <button class="buttonSave">Save</button>
+        </div>
+    </dialog>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="tools_admin">
+      <div class="firstOption">
+        <h2>User List</h2>
+        <div class="posButton">
+          <button class="addNew">+ NEW</button>
+          <div class="clonPosButton">
+            <button class="light_mode">
+              <img src="./img/light_mode.png" alt="" />
+              LIGHT
+            </button>
+            <button class="dark_mode">
+              DARK
+              <img src="./img/dark_mode.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="secondOption">
+        <div class="selects">
+          <fieldset class="optionForSelect">
+            <legend>Status</legend>
+            <select class="select_active_status" name="" id="">
+              <option value="all">All status</option>
+              <option value="active">Active</option>
+              <option value="rejected">Rejected</option>
+            </select>
+          </fieldset>
+          <fieldset class="optionForSelect">
+            <legend>City</legend>
+            <select class="select_active_city" name="" id="">
+              <option value="all">All cities</option>
+              <option value="ds">Dushanbe</option>
+              <option value="bk">Bokhtar</option>
+              <option value="kh">Khujand</option>
+            </select>
+          </fieldset>
+        </div>
+
+        <fieldset class="optionForSelector">
+          <legend>Search</legend>
+          <input class="searching" type="text" placeholder="Name, email, etc." />
+          <div>
+            <img src="./img/SearchFilled.png" alt="">
+          </div>
+        </fieldset>
+      </div>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>
+            <div class="thView">
+              <img src="./img/user-icon.png" alt="" />
+              Name
+            </div>
+          </th>
+          <th>
+            <div class="thView">
+              <img src="./img/Lock.png" alt="" />
+              Город
+            </div>
+          </th>
+          <th>
+            <div class="thView">
+              <img src="./img/Timer.png" alt="" />
+              Status
+              <img src="./img/arrow-alt-up.png" alt="" />
+            </div>
+          </th>
+          <th>
+            <div class="thView">
+              <img src="./img/tag.png" alt="" />
+              Phone
+            </div>
+          </th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody class="tbody"></tbody>
+    </table>
+
+    <dialog class="addModal">
+      <div class="states">
+        <div class="first-sector">
+          <h2>Add new</h2>
+          <img class="closeX" src="./img/clear.png" alt="">
+        </div>
+        <div>
+          <fieldset class="locate_image_box">
+            <legend>image</legend>
+            <input class="addImage" type="text" placeholder=".png / .jpg / .jpeg">
+            <div>
+              <img src="./img/FileDownloadFilled.png" alt="">
+            </div>
+          </fieldset>
+          <input class="addFullname" type="text" placeholder="Fullname">
+          <input class="addEmail" type="text" placeholder="Email">
+          <fieldset class="locate_image_box">
+            <legend>State</legend>
+            <select class="addStatus" name="" id="">
+              <option value="">Choose State</option>
+              <optgroup></optgroup>
+              <option value="active">Active</option>
+              <option value="rejected">Rejected</option>
+            </select>
+          </fieldset>
+          <fieldset class="locate_image_box">
+            <legend>City</legend>
+            <select class="addCity" name="" id="">
+              <option value="">All cities</option>
+              <optgroup></optgroup>
+              <option value="Dushanbe">Dushanbe</option>
+              <option value="Bokhtar">Bokhtar</option>
+              <option value="Khujand">Khujand</option>
+            </select>
+          </fieldset>
+          <input class="addPhoneNum" type="text" placeholder="Phone">
+        </div>
+        <div class="buttons">
+          <button class="btnSave">SAVE</button>
+          <button class="btnCancel">CANCEL</button>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="viewModal">
+      <div class="modalView">
+        <div class="viewProfile">
+          <img src="./img/Icon.png" alt="">
+          <p>View profile</p>
+        </div>
+        <div class="EditProfile">
+          <img src="./img/EditFilled.png" alt="">
+          <p>Edit</p>
+        </div>
+        <div class="deleteProfile">
+          <img src="./img/DeleteFilled.png" alt="">
+          <p style="color: red;">Delete</p>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="editModal">
+      <div class="states">
+        <div class="first-sector">
+          <h2>Edit Profile</h2>
+          <img class="closeY" src="./img/clear.png" alt="">
+        </div>
+        <input class="editImage" type="text" placeholder="Path to img...">
+        <input class="editFullname" type="text" placeholder="Fullname...">
+        <input class="editEmail" type="text" placeholder="Email...">
+        <select class="editCity" name="" id="">
+          <option value="">All cities</option>
+          <optgroup></optgroup>
+          <option value="Dushanbe">Dushanbe</option>
+          <option value="Bokhtar">Bokhtar</option>
+          <option value="Khujand">Khujand</option>
+        </select>
+        <select class="editStatus" name="" id="">
+          <option value="">Choose State</option>
+          <optgroup></optgroup>
+          <option value="active">Active</option>
+          <option value="rejected">Rejected</option>
+        </select>
+        <input class="editPhoneNum" type="text" placeholder="Phone Number...">
+        <div class="buttons">
+          <button class="buttonSave">SAVE</button>
+          <button class="buttonCancel">CANCEL</button>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="viewProf">
+      <div class="profile_style"></div>
+    </dialog>    
+
+    <script src="./script.js"></script>
+  </body>
+</html>

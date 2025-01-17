@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+.first-sector{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0px;
+}
+.butView{
+    padding: 10px 25px;
+    border-radius: 7px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+.butAdd{
+    padding: 10px 25px;
+    border-radius: 7px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.second-sec{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sort{
+    display: flex;
+    gap: 10px;
+}
+.all{
+    padding: 10px 20px;
+    box-shadow: 0px 0px 10px rgb(222, 219, 219);
+}
+.all1{
+    padding: 10px 20px;
+    box-shadow: 0px 0px 10px rgb(224, 224, 224);
+    background-color: rgb(244, 241, 241);
+}
+.search{
+    outline: none;
+    border: none;
+    border-radius:5px;
+    box-shadow: 0px 0px 10px rgb(159, 156, 156);
+    padding: 10px 0px 10px 10px;
+}
+table{
+    width: 90%;
+    margin: 100px auto;
+    border-collapse: collapse;
+    text-align: left;
+}
+th{
+    padding: 20px 30px; 
+    background-color: rgba(240, 237, 237, 0.311);
+}
+tr{
+    border: 1px solid rgba(182, 179, 179, 0.301);  
+    padding: 20px 10px;
+}
+tr:hover{
+    transform: scale(1.009);
+    transition: transform 0.5s ease;
+}
+.photoBlog{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 25px;
+}
+.photo{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+.names{
+    text-align: left;
+}
+.tdLeft{
+    padding-left: 30px;
+}
+.idfortTd{
+    display: none;
+}
+.stata{
+    padding: 10px 35px;
+    background-color: green;
+    color: white;
+}
+.clonStata{
+    padding: 10px 30px;
+    background-color: gray;
+    color: black;
+}
+.adding, .infoEdit{
+    width: 500px;
+    height: 600px;
+    position: absolute;
+    outline: none;
+    border: none;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 30px;
+}
+.structure{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    align-items: center;
+}
+.structure input, select{
+    width: 100%;
+    padding: 15px 0px;
+}
+.btnSave, .buttonSave{
+   width: 140px;
+   padding: 13px 0px;
+   border: none;
+   background-color: black;
+   color: white;
+   border-radius: 10px;
+   font-weight: bold;
+   cursor: pointer;
+}
