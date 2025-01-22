@@ -82,7 +82,6 @@ function get(arr) {
     }
 
     let profile_style = document.querySelector(".profile_style");
-    let closeZ = document.querySelector(".closeZ");
     viewProf.append(profile_style);
     //view
     viewProfile.onclick = () => {

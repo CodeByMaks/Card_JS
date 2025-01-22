@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: #171c22;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15%;
+}
+.main p {
+  font-size: 40px;
+  font-weight: bold;
+  padding: 10px 0px;
+  color: white;
+}
+.calc_structure {
+  width: 900px;
+  height: 650px;
+  margin: auto;
+  background-color: #171c22;
+  border: 10px solid #212a35;
+  outline: none;
+}
+.calcImgMini {
+  width: 50px;
+  height: 50px;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+.mini {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.mini p {
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+}
+.exit span {
+  border: 3px solid #937ce6;
+  padding: 2px 15px;
+  border-radius: 10px;
+  font-size: 30px;
+  color: #937ce6;
+}
+.exit {
+    cursor: pointer;
+}
+.calculator {
+  width: 96%;
+  margin: auto;
+  background-color: #212A35;
+  overflow: hidden;
+}
+
+.display {
+  padding: 40px 100px 40px 0px;
+  background-color: #171c22;
+  color: #fff;
+  text-align: right;
+  border-bottom: 10px solid #d321cd;
+  border-top: 3px solid white;
+}
+
+#history {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 5px;
+}
+
+#result {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.buttons {
+  width: 70%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 20px;
+  background-color: #212A35;
+}
+
+button {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #33334d;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+button:hover {
+  background-color: #444466;
+  transform: scale(1.1);
+}
+
+button:active {
+  transform: scale(1.05);
+  background-color: #555577;
+}
+button.operator {
+  background-color: #7f00ff;
+}
+button.operator:hover {
+  background-color: #9f00ff;
+}
+button.equal {
+  background-color: #ff007f;
+  grid-column: span 1;
+}
+button.equal:hover {
+  background-color: #ff3399;
+}

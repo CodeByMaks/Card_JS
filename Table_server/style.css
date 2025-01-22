@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  table {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    overflow-x: auto;
+  }
+  th,
+  td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(182, 179, 179, 0.301); /* Тонкая граница */
+  }
+  th {
+    background-color: rgba(240, 237, 237, 0.311);
+    font-weight: bold;
+  }
+  tr {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  tr:hover {
+    transform: scale(1.01);
+    background-color: rgba(240, 237, 237, 0.3);
+  }
+  .idfortTd{
+    display: none;
+  }
+  .thView {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .user img{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+  }
+  .stata {
+    color: white;
+    background-color: green;
+    padding: 7px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .clonStata{
+    color: white;
+    background-color: red;
+    padding: 7px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .tools_admin {
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+  }
+  .light_mode {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 10px 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+  .dark_mode {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 10px 16px;
+    font-weight: bold;
+    border: 1px solid rgb(232, 227, 227);
+    background-color: white;
+    cursor: pointer;
+  }
+  .posButton {
+    display: flex;
+    gap: 40px;
+  }
+  .clonPosButton {
+    display: flex;
+  }
+  .firstOption {
+    display: flex;
+    justify-content: space-between;
+  }
+  .firstOption h2{
+    font-size: 40px;
+  }
+  .addNew {
+    padding: 0px 25px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .selects {
+    width: 60%;
+    display: flex;
+    gap: 20px;
+  }
+  .secondOption {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0px;
+  }
+  .select_active_status {
+    width: 100%;
+    padding: 5px 0px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .select_active_city {
+    width: 100%;
+    padding: 5px 0px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  } 
+  .optionForSelect {
+    width: 20%;
+    border-radius: 5px;
+  }
+  .optionForSelector{
+    width: 20%;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .searching {
+    width: 85%;
+    padding: 10px 0px 10px 10px;
+    border: none;
+    outline: none;
+  }
+  .addModal, .editModal{
+    width: 500px;
+    height: 700px;
+    position: absolute;
+    border: none;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 30px;
+  }
+  .states{
+    width: 90%;
+    height: 630px;
+    margin: auto;
+  }
+  .first-sector{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(170, 170, 236);
+    padding: 15px 0px;
+  }
+  .addImage, .addStatus, .addCity{
+    padding: 10px 0px 10px 10px;
+    width: 90%;
+    border: none;
+    outline: none;
+  }
+  .addFullname, .addEmail, .addPhoneNum{
+    padding: 15px 0px 15px 20px;
+    width: 100%;
+    border: 1px solid gray;
+    margin: 15px 0px;
+    border-radius: 5px;
+  }
+  .locate_image_box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 0px;
+    border-radius: 5px;
+  }
+  .buttons{
+    display: flex;
+    gap: 25px;
+    border-top: 1px solid #007bff;
+    width: 100%;
+    margin: 10px 0px;
+    padding: 20px 0px;
+  }
+  .btnSave{
+    padding: 13px 23px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .btnCancel{
+    padding: 13px 23px;
+    color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .viewModal{
+    width: 220px;
+    height: 161px;
+    padding-top: 5px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 10px gray;
+    margin-left: 75%;
+    margin-top: 27%;
+  }
+  .modalView{
+    width: 90%;
+    height: 140px;
+    margin: auto;
+  }
+  .viewProfile, .EditProfile{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    padding: 10px 0px;
+  }
+  .deleteProfile{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-top: 15px;
+    padding: 10px 0px;
+    border-top: 1px solid rgb(221, 218, 218);
+  }
+  .editImage, .editFullname, .editEmail, .editCity, .editStatus, .editPhoneNum {
+    width: 100%;
+    padding: 15px 0px 15px 10px;
+    margin: 15px 0px;
+  }
+  .buttonSave{
+    padding: 13px 23px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .buttonCancel{
+    padding: 13px 23px;
+    color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .viewProf{
+    width: 440px;
+    height: 100%;
+    margin-top: 20px;
+    margin-left: 70%;
+    padding-top: 40px;
+    border: none;
+    outline: none;
+  }
+  .profile_style{
+    width: 85%;
+    height: 95%;
+    margin: auto;
+  }
+  .first-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .img_zoom{
+    width: 150px;
+    height: 150px;
+    margin: 20px 0px;
+  }
+  .names{
+    text-align: center;
+    padding: 20px 0px;
+  }
+  .info{
+    padding: 20px 0px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+  }
+  .info_sec{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+  }
+  .change{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  body
+{
+  transition: all 0.5s ease;
+}
+.lightMode 
+{
+  background-color: #fff;
+  color: black;
+}
+.darkMode 
+{
+  background-color: darkblue;
+  color: #fff;
+}
+.bntsearch{
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+.searchForm{
+  display: flex;
+  align-items: center;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.file-upload {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  padding: 4px 6px 4px 6px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.file-upload img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}

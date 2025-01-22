@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="tools_admin">
+      <div class="firstOption">
+        <h2>User List</h2>
+        <div class="posButton">
+          <button class="addNew">+ NEW</button>
+          <div class="clonPosButton">
+            <button class="light_mode">
+              <img src="./img/light_mode.png" alt="" />
+              LIGHT
+            </button>
+            <button class="dark_mode">
+              DARK
+              <img src="./img/dark_mode.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="secondOption">
+        <div class="selects">
+          <fieldset class="optionForSelect">
+            <legend>Status</legend>
+            <select class="select_active_status">
+              <option value="all">All</option>
+              <option value="true">Active</option>
+              <option value="false">Rejected</option>
+            </select>            
+          </fieldset>
+          <fieldset class="optionForSelect">
+            <legend>City</legend>
+            <select class="select_active_city">
+              <option value="all">All cities</option>
+              <option value="Dushanbe">Dushanbe</option>
+              <option value="Bokhtar">Bokhtar</option>
+              <option value="Khudjand">Khudjand</option>
+            </select>
+          </fieldset>
+        </div>
+
+        <fieldset class="optionForSelector">
+          <legend>Search</legend>
+          <form class="searchForm">
+            <input class="searching" name="searching" type="text" placeholder="Name, email, etc." />
+            <div>
+              <button type="submit" class="bntsearch"><img src="./img/SearchFilled.png" alt=""></button>
+            </div>
+          </form>
+        </fieldset>
+      </div>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>
+            <div class="thView">
+              <img src="./img/user-icon.png" alt="" />
+              Name
+            </div>
+          </th>
+          <th>
+            <div class="thView">
+              <img src="./img/Lock.png" alt="" />
+              Город
+            </div>
+          </th>
+          <th>
+            <div class="thView">
+              <img src="./img/Timer.png" alt="" />
+              Status
+              <img src="./img/arrow-alt-up.png" alt="" />
+            </div>
+          </th>
+          <th>
+            <div class="thView">
+              <img src="./img/tag.png" alt="" />
+              Phone
+            </div>
+          </th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody class="tbody"></tbody>
+    </table>
+
+    <dialog class="addModal">
+      <form class="addForm">
+        <div class="states">
+          <div class="first-sector">
+            <h2>Add new</h2>
+            <img class="closeX" src="./img/clear.png" alt="">
+          </div>
+          <div>
+            <fieldset class="locate_image_box">
+              <legend>image</legend>
+              <input class="addImage" name="addImage" type="text" placeholder=".png / .jpg / .jpeg">
+              <div>
+                <span class="file-upload">
+                  <label for="file-input">
+                    <img src="./img/FileDownloadFilled.png" alt="Загрузить">
+                  </label>
+                  <input type="file" id="file-input" accept=".png, .jpg, .jpeg">
+                </span>
+              </div>
+            </fieldset>
+            <input class="addFullname" name="addFullname" type="text" placeholder="Fullname">
+            <input class="addEmail" name="addEmail" type="text" placeholder="Email">
+            <fieldset class="locate_image_box">
+              <legend>State</legend>
+              <select class="addStatus" name="addStatus" id="">
+                <option value="">Choose State</option>
+                <optgroup></optgroup>
+                <option value="active">Active</option>
+                <option value="rejected">Rejected</option>
+              </select>
+            </fieldset>
+            <fieldset class="locate_image_box">
+              <legend>City</legend>
+              <select class="addCity" name="addCity" id="">
+                <option value="">All cities</option>
+                <optgroup></optgroup>
+                <option value="Dushanbe">Dushanbe</option>
+                <option value="Bokhtar">Bokhtar</option>
+                <option value="Khujand">Khujand</option>
+              </select>
+            </fieldset>
+            <input class="addPhoneNum" name="addPhoneNum" type="text" placeholder="Phone">
+          </div>
+          <div class="buttons">
+            <button type="submit" class="btnSave">SAVE</button>
+            <button class="btnCancel">CANCEL</button>
+          </div>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog class="viewModal">
+      <div class="modalView">
+        <div class="viewProfile">
+          <img src="./img/Icon.png" alt="">
+          <p>View profile</p>
+        </div>
+        <div class="EditProfile">
+          <img src="./img/EditFilled.png" alt="">
+          <p>Edit</p>
+        </div>
+        <div class="deleteProfile">
+          <img src="./img/DeleteFilled.png" alt="">
+          <p style="color: red;">Delete</p>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="editModal">
+      <form class="editForm">
+        <div class="states">
+          <div class="first-sector">
+            <h2>Edit Profile</h2>
+            <img class="closeY" src="./img/clear.png" alt="">
+          </div>
+          <input class="editImage" name="editImage" type="text" placeholder="Path to img...">
+          <input class="editFullname" type="text" name="editFullname" placeholder="Fullname...">
+          <input class="editEmail" name="editEmail" type="text" placeholder="Email...">
+          <select class="editCity" name="editCity" id="">
+            <option value="">All cities</option>
+            <optgroup></optgroup>
+            <option value="Dushanbe">Dushanbe</option>
+            <option value="Bokhtar">Bokhtar</option>
+            <option value="Khujand">Khujand</option>
+          </select>
+          <select class="editStatus" name="editStatus" id="">
+            <option value="">Choose State</option>
+            <optgroup></optgroup>
+            <option value="active">Active</option>
+            <option value="rejected">Rejected</option>
+          </select>
+          <input class="editPhoneNum" name="editPhoneNum" type="text" placeholder="Phone Number...">
+          <div class="buttons">
+            <button type="submit" class="buttonSave">SAVE</button>
+            <button class="buttonCancel">CANCEL</button>
+          </div>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog class="viewProf">
+      <div class="profile_style">
+        <div class="states">
+          <div class="first-sector">
+            <img class="closeZ" src="./img/clear.png" alt="Close">
+            <h2>User Info</h2>
+          </div>
+          <div class="first-sec">
+            <img class="img_zoom" src="" alt="User Avatar">
+            <div class="names">
+              <h1 class="profileFullname"></h1>
+              <p class="profileEmail"></p>
+            </div>
+          </div>
+          <div class="info">
+            <div class="info_sec">
+              <div class="change">
+                <img src="./img/Lock.png" alt="">
+                <p>City</p>
+              </div>
+              <p class="profileCity">Unknown</p>
+            </div>
+            <div class="info_sec">
+              <div class="change">
+                <img src="./img/Timer.png" alt="">
+                <p>Status</p>
+              </div>
+              <p class="profileStatus"></p>
+            </div>
+            <div class="info_sec">
+              <div class="change">
+                <img src="./img/tag.png" alt="">
+                <p>Phone</p>
+              </div>
+              <p class="profilePhone">N/A</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </dialog>     
+
+    <script src="./script.js"></script>
+  </body>
+</html>
