@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div>
+        <ul>
+          <li>
+            <a
+              style="text-decoration: none; color: black"
+              href="../latest job/mainSite.html"
+              >MAIN</a
+            >
+          </li>
+          <li>  <a
+            style="text-decoration: none; color: black"
+            href="../Job/index.html"
+            >JOB SEARCH</a
+          ></li>
+          <li><a
+            style="text-decoration: none; color: black"
+            href="../Admin/index.html"
+            >ADMIN</a
+          ></li>
+          <li>MANAGE APPLICANTS</li>
+        </ul>
+      </div>
+
+      <div class="list-jobs">
+        <div class="optionsAndBtn">
+          <h1>Applications</h1>
+          <button>CREATE NEW</button>
+        </div>
+        <hr />
+
+        <fieldset class="searchField">
+          <legend>Search</legend>
+          <form class="searchForm">
+            <input name="searchElement" type="text" placeholder="Name, email, etc..." />
+            <button type="submit"></button>
+          </form>
+        </fieldset>
+
+        <table>
+          <thead>
+            <tr>
+              <th>User</th>
+              <th>Email</th>
+              <th>Location</th>
+              <th>Phone Number</th>
+              <th>Responce</th>
+            </tr>
+          </thead>
+          <tbody class="tbody">
+            <tr></tr>
+          </tbody>
+        </table>
+
+        <div class="pagination"></div>
+      </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

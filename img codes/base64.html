@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="file" id="fileInput">
+    <button class="btnDel">Delete</button>
+
+    <script>
+        const fileInput = document.getElementById("fileInput")
+
+        fileInput.addEventListener('change', e => {
+            const file = fileInput.files[0];
+            const reader = new FileReader();
+
+            reader.addEventListener('load', ()=>{
+                const photo = reader.result;
+                console.log(photo);
+                
+            })
+            reader.readAsDataURL(file);
+        })
+
+
+        const btnDel = document.querySelector(".btnDel");
+        btnDel.onclick = () => {
+            confirm("Are you delete nothing&");
+        } 
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="box">
+      <div class="first-sec">
+        <div class="continent">
+          <img src="../img/Location.png" alt="" />
+          <h2 class="city"></h2>
+        </div>
+      </div>
+
+      <div class="last-sec">
+        <div>
+          <img src="../img/Sun.png" class="iconWeather" alt="" />
+          <h1 class="temp">0°C</h1>
+          <p class="period"></p>
+        </div>
+        <div class="dates">
+          <h2 class="byWeek"></h2>
+          <p class="date"></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="search">
+      <form class="searchForm">
+        <input
+          class="searchCity"
+          name="searchCity"
+          type="text"
+          placeholder="Search city..."
+        />
+        <button type="submit" class="btnSearch">
+          <img class="icon" src="../img/SearchFilled.png" alt="" />
+        </button>
+      </form>
+    </div>
+
+    <div class="otherData">
+      <div>
+        <h1 class="precipitation">0%</h1>
+        <p>PRECIPITATION</p>
+      </div>
+      <div>
+        <h1 class="humidity">42%</h1>
+        <p>HUMIDITY</p>
+      </div>
+      <div>
+        <h1 class="wind">4 km/h</h1>
+        <p>WIND</p>
+      </div>
+    </div>
+
+    <script type="module" src="../JS/main.js"></script>
+  </body>
+</html>

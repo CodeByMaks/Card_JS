@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div>
+        <ul>
+          <li> <a
+            style="text-decoration: none; color: black"
+            href="../latest job/mainSite.html"
+            >MAIN</a
+          ></li>
+          <li>JOB SEARCH</li>
+          <li><a
+            style="text-decoration: none; color: black"
+            href="../Admin/index.html"
+            >ADMIN</a
+          ></li>
+          <li>
+            <a
+              style="text-decoration: none; color: black"
+              href="../Application/index.html"
+              >MANAGE APPLICANTS</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="list-jobs">
+        <h1>Job ads</h1>
+        <hr />
+        <div class="option-select">
+            <div class="selects-field">
+                <fieldset >
+                    <legend>Category</legend>
+                    <select class="profCategory" name="" id="">
+                        <option value="">Choose an option</option>
+                        <option value="all">All Category</option>
+                        <option value="">Frontend</option>
+                        <option value="">Backend</option>
+                    </select>
+                </fieldset>
+            </div>
+            <div class="selects-field">
+                <fieldset>
+                    <legend>Experience level</legend>
+                    <select class="levelCategory" name="" id="">
+                        <option value="">Choose an option</option>
+                        <option value="all">All Category</option>
+                        <option value="">Junior</option>
+                        <option value="">Middle</option>
+                        <option value="">Senior</option>
+                        <option value="">Full-stack</option>
+                    </select>
+                </fieldset>
+            </div>
+        </div>
+        <div class="more-cards"></div>
+      </div>
+    </div>
+
+    <script type="module" src="../JS/main.js"></script>
+  </body>
+</html>
